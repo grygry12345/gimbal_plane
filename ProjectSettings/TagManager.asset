@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Yaw
+  - Pitch
+  - Roll
   layers:
   - Default
   - TransparentFX
