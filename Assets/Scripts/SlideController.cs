@@ -25,16 +25,16 @@ public class SlideController : MonoBehaviour
         switch (Info.text)
         {
             case "Pitch":
-                GimballController.Pitch = Slide.value;
-                GimballController.PitchTransform.eulerAngles = new Vector3(-1 * Slide.value, 0, 0);
+                GimballController.GimballPitch = -1 * Slide.value;
+                GimballController.TransformPitch.eulerAngles = new Vector3(-1 * Slide.value, 0, 0);
                 break;
             case "Yaw":
-                GimballController.Yaw = Slide.value;
-                GimballController.YawTransform.eulerAngles = new Vector3(0,Slide.value,0);
+                GimballController.GimballYaw = Slide.value;
+                GimballController.TransformYaw.eulerAngles = new Vector3(0,Slide.value,0);
                 break;
             case "Roll":
-                GimballController.Roll = Slide.value;
-                GimballController.RollTransform.eulerAngles = new Vector3(0, 0, Slide.value);
+                GimballController.GimballRoll = Slide.value;
+                GimballController.TransformRoll.eulerAngles = new Vector3(0, 0, Slide.value);
                 break;
             default:
                 Debug.LogError("Error in getting angles.");
@@ -49,16 +49,16 @@ public class SlideController : MonoBehaviour
         switch (Info.text)
         {
             case "Pitch":
-                GimballController.Pitch = Slide.value;
-                GimballController.PitchTransform.eulerAngles = new Vector3(-1 * Slide.value, 0, 0);
+                GimballController.GimballPitch = -1 * Slide.value;
+                GimballController.TransformPitch.eulerAngles = new Vector3(-1 * Slide.value, 0, 0);
                 break;
             case "Yaw":
-                GimballController.Yaw = Slide.value;
-                GimballController.YawTransform.eulerAngles = new Vector3(0, Slide.value, 0);
+                GimballController.GimballYaw = Slide.value;
+                GimballController.TransformYaw.eulerAngles = new Vector3(0, Slide.value, 0);
                 break;
             case "Roll":
-                GimballController.Roll = Slide.value;
-                GimballController.RollTransform.eulerAngles = new Vector3(0, 0, Slide.value);
+                GimballController.GimballRoll = Slide.value;
+                GimballController.TransformRoll.eulerAngles = new Vector3(0, 0, Slide.value);
                 break;
             default:
                 Debug.LogError("Error in getting angles.");

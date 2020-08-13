@@ -939,6 +939,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7641979965022492756}
+  - component: {fileID: 317563340479611652}
   m_Layer: 5
   m_Name: Orientation2
   m_TagString: Untagged
@@ -970,6 +971,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0.99998474, y: 7.700988}
   m_SizeDelta: {x: 324.10648, y: 42.80159}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &317563340479611652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2729813966736453198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa98514b0d007a43beba81df11a041f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextboxYaw: {fileID: 3201409722369677863}
+  TextboxPitch: {fileID: 7741747596447013432}
+  TextboxRoll: {fileID: 5331052622618003894}
+  OrientationYaw: 0
+  OrientationPitch: 0
+  OrientationRoll: 0
 --- !u!1 &2854398101039762674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,7 +1066,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Set Curent
+  m_Text: Get Curent
 --- !u!1 &2900196105970072345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,7 +1524,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Set Curent
+  m_Text: Get Curent
 --- !u!1 &4933937139019644378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1945,7 +1964,7 @@ GameObject:
   - component: {fileID: 6535106901115609680}
   - component: {fileID: 2635673719037821318}
   m_Layer: 5
-  m_Name: SetCurrent
+  m_Name: GetCurrent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2050,7 +2069,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6535106901115609680}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 317563340479611652}
+        m_MethodName: OrientationGetCurrent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7148161139831440017
 GameObject:
   m_ObjectHideFlags: 0
@@ -2834,7 +2864,7 @@ GameObject:
   - component: {fileID: 8812327145998118026}
   - component: {fileID: 2841448604084799702}
   m_Layer: 5
-  m_Name: SetCurrent
+  m_Name: GetCurrent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2939,7 +2969,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8812327145998118026}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1262472969374074540}
+        m_MethodName: OrientationGetCurrent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8893471121943036273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2949,6 +2990,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 321970828346230911}
+  - component: {fileID: 1262472969374074540}
   m_Layer: 5
   m_Name: Orientation1
   m_TagString: Untagged
@@ -2980,3 +3022,21 @@ RectTransform:
   m_AnchoredPosition: {x: 1, y: 58}
   m_SizeDelta: {x: 324.10648, y: 44.139603}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1262472969374074540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8893471121943036273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa98514b0d007a43beba81df11a041f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextboxYaw: {fileID: 5780580920379250903}
+  TextboxPitch: {fileID: 3938201881717496200}
+  TextboxRoll: {fileID: 3530445766970871443}
+  OrientationYaw: 0
+  OrientationPitch: 0
+  OrientationRoll: 0

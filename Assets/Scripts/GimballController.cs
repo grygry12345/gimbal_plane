@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class GimballController : MonoBehaviour
 {
-    public static Transform PitchTransform; // X axis
-    public static Transform YawTransform; // Y axis
-    public static Transform RollTransform; // Z axis
-    public static float Roll;
-    public static float Pitch;
-    public static float Yaw;
+    public static Transform TransformPitch; // X axis
+    public static Transform TransformYaw; // Y axis
+    public static Transform TransformRoll; // Z axis
+    public static float GimballYaw;
+    public static float GimballPitch;
+    public static float GimballRoll;
 
     private void Awake() // Initialize axises and inintialize transforms
     {
-        PitchTransform = transform.Find("Pitch");
-        YawTransform = PitchTransform.Find("Yaw");
-        RollTransform = YawTransform.Find("Roll");
-        Roll = 0;
-        Pitch = 0;
-        Yaw = 0;
+        TransformPitch = transform.Find("Pitch");
+        TransformYaw = TransformPitch.Find("Yaw");
+        TransformRoll = TransformYaw.Find("Roll");
+        GimballYaw = 0;
+        GimballPitch = 0;
+        GimballYaw = 0;
     }
 }
