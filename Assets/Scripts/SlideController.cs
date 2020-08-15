@@ -25,16 +25,16 @@ public class SlideController : MonoBehaviour
         switch (Info.text)
         {
             case "Pitch":
-                GimballController.GimballPitch = -1 * Slide.value;
-                GimballController.TransformPitch.eulerAngles = new Vector3(-1 * Slide.value, 0, 0);
+                GimballController.TransformPitch.eulerAngles = new Vector3(Slide.value, 0, 0);
+                GimballController.Pitch = Slide.value;
                 break;
             case "Yaw":
-                GimballController.GimballYaw = Slide.value;
                 GimballController.TransformYaw.eulerAngles = new Vector3(0,Slide.value,0);
+                GimballController.Yaw = Slide.value;
                 break;
             case "Roll":
-                GimballController.GimballRoll = Slide.value;
                 GimballController.TransformRoll.eulerAngles = new Vector3(0, 0, Slide.value);
+                GimballController.Roll = Slide.value;
                 break;
             default:
                 Debug.LogError("Error in getting angles.");
@@ -49,16 +49,16 @@ public class SlideController : MonoBehaviour
         switch (Info.text)
         {
             case "Pitch":
-                GimballController.GimballPitch = -1 * Slide.value;
-                GimballController.TransformPitch.eulerAngles = new Vector3(-1 * Slide.value, 0, 0);
+                GimballController.TransformPitch.eulerAngles = new Vector3(Slide.value, 0, 0);
+                GimballController.Pitch = Slide.value;
                 break;
             case "Yaw":
-                GimballController.GimballYaw = Slide.value;
                 GimballController.TransformYaw.eulerAngles = new Vector3(0, Slide.value, 0);
+                GimballController.Yaw = Slide.value;
                 break;
             case "Roll":
-                GimballController.GimballRoll = Slide.value;
                 GimballController.TransformRoll.eulerAngles = new Vector3(0, 0, Slide.value);
+                GimballController.Roll = Slide.value;
                 break;
             default:
                 Debug.LogError("Error in getting angles.");

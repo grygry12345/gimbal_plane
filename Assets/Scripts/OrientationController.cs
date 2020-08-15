@@ -24,9 +24,9 @@ public class OrientationController : MonoBehaviour
 
     public void OrientationGetCurrent() // Get values from pitch, yaw and roll from sliders.
     {
-        OrientationYaw = GimballController.GimballYaw;
-        OrientationPitch = GimballController.GimballPitch;
-        OrientationRoll = GimballController.GimballRoll;
+        OrientationYaw = GimballController.Yaw;
+        OrientationPitch = GimballController.Pitch;
+        OrientationRoll = GimballController.Roll;
 
         TextboxYaw.text = OrientationYaw.ToString();
         TextboxPitch.text = OrientationPitch.ToString();

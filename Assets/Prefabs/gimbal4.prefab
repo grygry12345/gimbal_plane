@@ -251,6 +251,8 @@ GameObject:
   - component: {fileID: 7381215458730688535}
   - component: {fileID: 5890853239599714226}
   - component: {fileID: 330962840835432973}
+  - component: {fileID: 4694769377434279102}
+  - component: {fileID: 7714102428956510011}
   m_Layer: 0
   m_Name: gimbal4
   m_TagString: Untagged
@@ -293,6 +295,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cf45713c791adc4b95822a5e710a98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4694769377434279102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7864561442374261421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 391027821fb8fef4199f831deaa0051f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Orientation1: {fileID: 0}
+  Orientation2: {fileID: 0}
+  AnimationTime: 0
+--- !u!114 &7714102428956510011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7864561442374261421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 391027821fb8fef4199f831deaa0051f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Orientation1: {fileID: 0}
+  Orientation2: {fileID: 0}
+  AnimationTime: 1000
 --- !u!1 &8917739716678955262
 GameObject:
   m_ObjectHideFlags: 0
