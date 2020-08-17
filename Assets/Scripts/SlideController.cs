@@ -16,6 +16,7 @@ public class SlideController : MonoBehaviour
         
         Slide.value = 0;
         TextBox.text = Slide.value.ToString();
+
     }
 
     public void OnSliderUpdate() // Update value TextBox when Slider is changed then update the gimbal

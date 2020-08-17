@@ -324,7 +324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Orientation1: {fileID: 0}
   Orientation2: {fileID: 0}
-  AnimationTime: 1000
+  AnimationTime: 45
 --- !u!1 &8917739716678955262
 GameObject:
   m_ObjectHideFlags: 0
